@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "poetry-env"
+version = "0.1.0"
+description = ""
+authors = ["Vitalii <evit.viter@gmail.com>"]
+readme = "README.md"
+packages = [{include = "poetry_env"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+selenium = "^4.10.0"
+selene = "^2.0.0rc2"
+pytest = "^7.3.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
